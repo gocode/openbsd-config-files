@@ -3,7 +3,14 @@
 # sh/ksh initialization
 
 PATH=$HOME/bin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/X11R6/bin:/usr/local/bin:/usr/local/sbin:/usr/games:/usr/local/go/bin:.
-GOROOT=/usr/local/go
-GOPATH=$HOME/gopath
-export PATH HOME TERM GOROOT GOPATH
+export PATH HOME TERM
 
+
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/gopath
+export PS1='\w $ '
+
+
+
+alia sll='ls -alhF'
+alias la='ls -aF'

@@ -1,0 +1,20 @@
+# customize some bindings (C-control M-alt M1-button1)
+bind M-r        exec
+bind CM-r       reload
+bind CM-l       label
+bind CM-t       "xterm -e \"top -s 0.6\""
+bind CM-m       menusearch
+mousebind M-1   window_move
+mousebind CM-1  window_resize
+
+# application menu
+command xterm	xterm 
+command chrome	chrome 
+command pcmanfm pcmanfm
+
+# groups predefined, use xprop to get these from each program
+autogroup 2     "xterm,chrome
+autogroup 3     "pcmanfm"
+
+# inherit current selected group
+sticky yes
